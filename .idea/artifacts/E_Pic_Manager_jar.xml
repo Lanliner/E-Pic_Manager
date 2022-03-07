@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="E-Pic_Manager:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/E_Pic_Manager_jar</output-path>
+    <root id="archive" name="E-Pic_Manager.jar">
+      <element id="module-output" name="E-Pic_Manager" />
+    </root>
+  </artifact>
+</component>

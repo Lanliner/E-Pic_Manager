@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:'PingFang SC';
+    letter-spacing: .05em;
+    font-size:11.8pt;
+}
+
+html,body,main,#menu{
+    height: 100%;
+}
+
+body{
+    background:url('picture/back.png') repeat-y;
+}
+#menu {
+    position:fixed;
+    z-index:999;
+    width:220px;
+    height:100%;
+    background:url('picture/back.png') repeat-y;
+    padding:0;
+    margin:0;
+    float:left;
+    color:#000000;
+}
+
+p {margin:0.1em 1em 0.5em;line-height:125%;}
+
+p3{line-height:150%;}
+
+.menuul {
+    list-style-type:decimal !important;
+    margin-left:3em;
+    margin-bottom: 0.5em;
+}
+
+li {
+    margin:0.1em 0.5em;
+    padding:0;
+}
+
+.header{
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 100px;
+}
+
+.menutxt {
+    width:200px;
+    padding:20px  20px;
+}
+
+.bold {font-weight:bold;}
+
+.bold2 {
+    font-weight:bold;
+    color:#ffeaa0;
+}
+
+a{text-decoration-line: none;}
+a:link, a:visited {color:#000000;}
+a:hover {color:#f06fff;}
+a:active {color:#ffc3a0;}
+
+.main {
+    width:640px;
+    margin:0 0 0 250px;
+    padding:0 20px 0 0;
+}
+
+.txtm {
+    padding-left:1.5em;
+    margin-bottom:2em;
+}
+
+.cent {text-align:center;
+    padding-top: 20px;
+    }
+
+.txtm p {
+    /*padding-bottom: 1em;*/
+    padding-left:1em;
+    margin-bottom: 1px;
+}
+
+h4,h5 {
+    text-align: left;
+    color: #ffffff;
+    padding-left:2em;
+    margin-top: 2em;
+}
+
+.hback {
+    text-align: left;
+    font-size:150%;
+    color:#ffffff;
+    background:url("picture/hback.png") no-repeat;
+    width:500px;
+    height:70px;
+    line-height:80px;
+    padding-left:2em;
+    margin:1em;
+}
+h4 {
+    font-size:120%;
+    height:40px;
+    margin:1.5em 0 0.5em 1em;
+}
+
+.h4back {
+    background:url("picture/h4back.png") no-repeat;
+    width:500px;
+    height:40px;
+    line-height:40px;
+}
+h5 {
+    line-height:30px;
+    height:30px;
+    margin: 2em 0 1em 0;
+}
+.h5back {
+    background:url("picture/h5back.png") no-repeat;
+    width:243px;
+    height:30px;
+    line-height:30px;
+
+}
+.staff li {
+    margin:0.3em 0 0.4em 1em;
+    padding:0;
+    font-size:130%;
+}
+
+.mgl4 {margin-left:2em;}
+.return {text-align:right;}
+.return a {font-size:80%;}

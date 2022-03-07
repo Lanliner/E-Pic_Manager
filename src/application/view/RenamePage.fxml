@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.Rename">
+   <children>
+      <TableView fx:id="picTable" layoutX="14.0" layoutY="14.0" prefHeight="512.0" prefWidth="780.0" style="-fx-background-color: #fefefe; -fx-border-color: #aaaaaa;" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+        <columns>
+          <TableColumn fx:id="numColumn" editable="false" maxWidth="56.0" minWidth="56.0" prefWidth="56.0" resizable="false" sortable="false" text="序号" />
+          <TableColumn fx:id="oldNameColumn" editable="false" maxWidth="680.0" minWidth="80.0" prefWidth="340.0" sortable="false" text="修改前文件名及扩展名" />
+            <TableColumn fx:id="newNameColumn" editable="false" maxWidth="760.0" minWidth="80.0" prefWidth="380.0" sortable="false" text="修改后文件名及扩展名" />
+        </columns>
+      </TableView>
+      <AnchorPane fx:id="textPane" layoutX="14.0" layoutY="529.0" AnchorPane.bottomAnchor="17.0">
+         <children>
+            <AnchorPane fx:id="namePane" prefHeight="54.0" prefWidth="446.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+               <children>
+                  <Label text="前缀" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  <TextField fx:id="name_prefix" layoutY="24.0" prefHeight="30.0" prefWidth="180.0" />
+                  <Label layoutX="193.0" layoutY="29.0" text="原文件名" />
+                  <Label layoutX="266.0" prefHeight="0.0" prefWidth="30.0" text="后缀" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="0.0" />
+                  <TextField fx:id="name_postfix" layoutX="389.0" layoutY="24.0" prefHeight="30.0" prefWidth="180.0" AnchorPane.rightAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="numPane" prefHeight="54.0" prefWidth="446.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+               <children>
+                  <Label text="重命名名称" />
+                  <TextField fx:id="num_name" layoutY="24.0" prefHeight="30.0" prefWidth="292.0" />
+                  <Label layoutX="312.0" text="起始编号" />
+                  <TextField fx:id="num_start" layoutX="315.0" layoutY="24.0" prefHeight="30.0" prefWidth="54.0" />
+                  <Label layoutX="386.0" text="编号位数" />
+                  <TextField fx:id="num_bit" layoutX="389.0" layoutY="24.0" prefHeight="30.0" prefWidth="54.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <Label layoutX="474.0" layoutY="529.0" text="模式" />
+      <Button fx:id="modeSwitchButton" contentDisplay="GRAPHIC_ONLY" layoutX="474.0" layoutY="553.0" mnemonicParsing="false" onAction="#modeSwitchAction" prefHeight="30.0" prefWidth="30.0" text="模式切换按钮">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </Button>
+      <Label layoutX="520.0" layoutY="529.0" text="文件数" />
+      <Text fx:id="countText" layoutX="520.0" layoutY="575.0" nodeOrientation="RIGHT_TO_LEFT" strokeType="OUTSIDE" strokeWidth="0.0" text="数量" wrappingWidth="45.0">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Text>
+      <Button fx:id="confirmButton" layoutX="668.0" layoutY="541.0" mnemonicParsing="false" onAction="#confirmAction" prefHeight="40.0" prefWidth="120.0" text="确认重命名">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="previewButton" layoutX="585.0" layoutY="541.0" mnemonicParsing="false" onAction="#previewAction" prefHeight="40.0" prefWidth="70.0" text="预览">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
